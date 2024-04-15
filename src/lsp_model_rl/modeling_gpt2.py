@@ -327,7 +327,7 @@ class GPT2LMHeadModel_v2(GPT2LMHeadModel):
 			import sys, os
 			sys.path.append("../")
 			sys.path.append(".../")
-			from MisinfoCorrect.src.variables_ext import device
+			from variables_ext import device
 			# ==== ext: device control ====
 			curr_seeker = curr_seeker.to(device)  # by ext from cuda
 			# self.generate: is a method of class from transformers.PreTrainedModel

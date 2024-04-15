@@ -32,7 +32,7 @@ from gpt2_training.distributed import all_reduce_and_rescale_tensors, all_gather
 import sys, os
 sys.path.append("../")
 sys.path.append(".../")
-import MisinfoCorrect.src.variables_ext as cfg
+import variables_ext as cfg
 
 import time
 
@@ -148,7 +148,7 @@ if args.local_rank == -1:
 	sys.path.append("../")
 	sys.path.append(".../")
 	sys.path.append("..../")
-	from MisinfoCorrect.src.variables_ext import device, n_gpu
+	from variables_ext import device, n_gpu
 
 	args.device, args.n_gpu = device, n_gpu
 else:
